@@ -11,21 +11,21 @@ testimonials, appointments, reservations, and products are fictional.
 
 ## Website catalogue
 
-| Website | Original project | Purpose | Workspace |
-| --- | --- | --- | --- |
-| Luxury Store | Aura Luxe Showcase | Premium product and luxury retail showcase | `@portfolio-websites/luxury-store` |
-| Cafe | Brew Haven Cafe | Cafe menu, story, location, and customer experience | `@portfolio-websites/cafe` |
-| Barber Shop | Cut Craft Hub | Barber services, pricing, team, and booking presentation | `@portfolio-websites/barber-shop` |
-| Dental Clinic | Dantam Dental Clinic | Dental services and clinic information | `@portfolio-websites/dental-clinic` |
-| Skin Clinic | Derma Glow Clinic | Dermatology treatments, specialists, and consultation content | `@portfolio-websites/skin-clinic` |
-| Academy | Excel Edge Academy | Courses, learning outcomes, and academy information | `@portfolio-websites/academy` |
-| Gym | Iron Peak Circle | Fitness programs, memberships, trainers, and facilities | `@portfolio-websites/gym` |
-| Restaurant | Royal Spice House | Restaurant menu, dining experience, and reservation presentation | `@portfolio-websites/restaurant` |
-| Hotel | Seagrove Unveiled | Rooms, amenities, destination content, and booking presentation | `@portfolio-websites/hotel` |
-| Habit Tracker | SimpleHabits | Habit tracking and journaling for web and desktop | `@portfolio-websites/habit-tracker` |
-| Modern Dental Clinic | Smile Craft Dental | Modern dental care, treatments, and appointment presentation | `@portfolio-websites/modern-dental-clinic` |
-| Fashion | Vela Wearable Art | Fashion collection and wearable-art storefront | `@portfolio-websites/fashion` |
-| Travel | Wander Nest | Destinations, travel inspiration, and trip-planning presentation | `@portfolio-websites/travel` |
+| Website | Original project | Purpose | Workspace | Live demo |
+| --- | --- | --- | --- | --- |
+| Luxury Salon | Aura Luxe Showcase | Premium hair, skin, and beauty services showcase | `@portfolio-websites/luxury-store` | [View demo](https://auraluxeshowcase.vercel.app/) |
+| Cafe | Brew Haven Cafe | Cafe menu, story, location, and customer experience | `@portfolio-websites/cafe` | [View demo](https://brewheavencafe.vercel.app/) |
+| Video Editing Studio | Cut Craft Hub | Video-editing services, pricing, portfolio, and enquiries | `@portfolio-websites/barber-shop` | [View demo](https://cutcrafthub.vercel.app/) |
+| Dental Clinic | Dantam Dental Clinic | Dental services and clinic information | `@portfolio-websites/dental-clinic` | [View demo](https://dantamdentalclinic.vercel.app/) |
+| Skin Clinic | Derma Glow Clinic | Dermatology treatments, specialists, and consultation content | `@portfolio-websites/skin-clinic` | [View demo](https://dermaglowclinic.vercel.app/) |
+| Academy | Excel Edge Academy | Courses, learning outcomes, and academy information | `@portfolio-websites/academy` | [View demo](https://exceledgeacademy.vercel.app/) |
+| Gym | Iron Peak Circle | Fitness programs, memberships, trainers, and facilities | `@portfolio-websites/gym` | [View demo](https://ironpeakcircle.vercel.app/) |
+| Restaurant | Royal Spice House | Restaurant menu, dining experience, and reservation presentation | `@portfolio-websites/restaurant` | Not available |
+| Hotel | Seagrove Unveiled | Rooms, amenities, destination content, and booking presentation | `@portfolio-websites/hotel` | [View demo](https://seagroveunveiled.vercel.app/) |
+| Habit Tracker | SimpleHabits | Habit tracking and journaling for web and desktop | `@portfolio-websites/habit-tracker` | [View demo](https://simplehabitstracker.vercel.app/) |
+| Modern Dental Clinic | Smile Craft Dental | Modern dental care, treatments, and appointment presentation | `@portfolio-websites/modern-dental-clinic` | [View demo](https://smilecraftdentel.vercel.app/) |
+| Fashion | Vela Wearable Art | Fashion collection and wearable-art storefront | `@portfolio-websites/fashion` | [View demo](https://velawearableart.vercel.app/) |
+| Travel | Wander Nest | Destinations, travel inspiration, and trip-planning presentation | `@portfolio-websites/travel` | [View demo](https://wandernesttravel.vercel.app/) |
 
 ## Repository structure
 
