@@ -20,7 +20,7 @@ testimonials, appointments, reservations, and products are fictional.
 | Skin Clinic | Derma Glow Clinic | Dermatology treatments, specialists, and consultation content | `@portfolio-websites/skin-clinic` | [View demo](https://dermaglowclinic.vercel.app/) |
 | Academy | Excel Edge Academy | Courses, learning outcomes, and academy information | `@portfolio-websites/academy` | [View demo](https://exceledgeacademy.vercel.app/) |
 | Gym | Iron Peak Circle | Fitness programs, memberships, trainers, and facilities | `@portfolio-websites/gym` | [View demo](https://ironpeakcircle.vercel.app/) |
-| Restaurant | Royal Spice House | Restaurant menu, dining experience, and reservation presentation | `@portfolio-websites/restaurant` | Not available |
+| Restaurant | Royal Spice House | Restaurant menu, dining experience, and reservation presentation | `@portfolio-websites/restaurant` | [View demo](https://royalspicehouse.vercel.app/) |
 | Hotel | Seagrove Unveiled | Rooms, amenities, destination content, and booking presentation | `@portfolio-websites/hotel` | [View demo](https://seagroveunveiled.vercel.app/) |
 | Habit Tracker | SimpleHabits | Habit tracking and journaling for web and desktop | `@portfolio-websites/habit-tracker` | [View demo](https://simplehabitstracker.vercel.app/) |
 | Modern Dental Clinic | Smile Craft Dental | Modern dental care, treatments, and appointment presentation | `@portfolio-websites/modern-dental-clinic` | [View demo](https://smilecraftdentel.vercel.app/) |
@@ -98,7 +98,7 @@ git --version
 Clone the monorepo and install every workspace with one command:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Aaditya-Magar/Demo_Websites_Projects.git
 cd Demo_Website_Projects
 npm install
 ```
