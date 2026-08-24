@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Background -->
+  <rect width="256" height="256" fill="#080808" rx="56"/>
+  
+  <!-- Dumbbell design -->
+  <g transform="translate(128, 128)">
+    <!-- Left weight plate -->
+    <rect x="-90" y="-24" width="48" height="48" rx="4" fill="#E8192C"/>
+    <rect x="-85" y="-19" width="38" height="38" rx="2" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.3"/>
+    
+    <!-- Left connector -->
+    <rect x="-45" y="-12" width="20" height="24" rx="2" fill="#C9A84C"/>
+    
+    <!-- Center bar -->
+    <rect x="-25" y="-8" width="50" height="16" rx="3" fill="#ffffff"/>
+    
+    <!-- Right connector -->
+    <rect x="25" y="-12" width="20" height="24" rx="2" fill="#C9A84C"/>
+    
+    <!-- Right weight plate -->
+    <rect x="42" y="-24" width="48" height="48" rx="4" fill="#E8192C"/>
+    <rect x="47" y="-19" width="38" height="38" rx="2" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.3"/>
+  </g>
+</svg>

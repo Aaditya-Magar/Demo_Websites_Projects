@@ -1,0 +1,20 @@
+{
+  "name": "Royal Spice House",
+  "short_name": "Royal Spice",
+  "description": "A portfolio restaurant website showcasing a premium Indian dining brand experience.",
+  "theme_color": "#1c1c1c",
+  "background_color": "#1c1c1c",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png?v=2",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png?v=2",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

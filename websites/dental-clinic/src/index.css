@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 99%;
+    --foreground: 210 40% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 40% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 40% 12%;
+
+    --primary: 195 80% 28%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 195 30% 95%;
+    --secondary-foreground: 210 40% 12%;
+
+    --muted: 195 15% 93%;
+    --muted-foreground: 210 10% 45%;
+
+    --accent: 25 90% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 195 15% 88%;
+    --input: 195 15% 88%;
+    --ring: 195 80% 28%;
+
+    --radius: 0.75rem;
+
+    --teal: 195 80% 28%;
+    --teal-light: 195 60% 45%;
+    --teal-dark: 195 90% 20%;
+    --saffron: 25 90% 52%;
+    --saffron-light: 25 80% 65%;
+    --saffron-dark: 25 95% 38%;
+    --ivory: 40 40% 97%;
+    --ivory-dark: 40 20% 90%;
+
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'DM Sans', sans-serif;
+
+    --shadow-elegant: 0 4px 30px -4px hsl(195 80% 28% / 0.1);
+    --shadow-accent: 0 4px 20px -4px hsl(25 90% 52% / 0.3);
+    --gradient-primary: linear-gradient(135deg, hsl(195 80% 28%), hsl(195 60% 40%));
+    --gradient-accent: linear-gradient(135deg, hsl(25 90% 52%), hsl(25 80% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(195 80% 28%), hsl(195 70% 22%));
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+
+  /* Hide scrollbars but keep scrollable */
+  html, body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Opera */
+  }
+  
+  /* Also hide scrollbars on all scrollable elements */
+  *::-webkit-scrollbar {
+    display: none;
+  }
+  * {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+  .shadow-accent {
+    box-shadow: var(--shadow-accent);
+  }
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+}

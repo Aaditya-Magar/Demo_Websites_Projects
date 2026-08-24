@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="dermaglow-gradient" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F472B6"/>
+      <stop offset="1" stop-color="#FDE68A"/>
+    </linearGradient>
+    <radialGradient id="dermaglow-shine" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(24 20) rotate(51.34) scale(28.8444)">
+      <stop stop-color="#FFFFFF" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="32" cy="32" r="28" fill="#0F172A"/>
+  <circle cx="32" cy="32" r="26" fill="url(#dermaglow-gradient)"/>
+  <circle cx="32" cy="32" r="26" fill="url(#dermaglow-shine)"/>
+  <path
+    fill="#FFFDF8"
+    d="M31.999 15.5c1.107 0 1.907.96 2.31 2.57l1.86 7.438c.118.471.487.839.958.958l7.438 1.86c1.61.403 2.57 1.203 2.57 2.31s-.96 1.907-2.57 2.31l-7.438 1.86a1.355 1.355 0 0 0-.958.958l-1.86 7.438c-.403 1.61-1.203 2.57-2.31 2.57s-1.907-.96-2.31-2.57l-1.86-7.438a1.355 1.355 0 0 0-.958-.958l-7.438-1.86c-1.61-.403-2.57-1.203-2.57-2.31s.96-1.907 2.57-2.31l7.438-1.86c.471-.119.84-.487.958-.958l1.86-7.438c.403-1.61 1.203-2.57 2.31-2.57Z"
+  />
+  <circle cx="45.5" cy="18.5" r="3.5" fill="#FFFDF8" fill-opacity=".92"/>
+</svg>

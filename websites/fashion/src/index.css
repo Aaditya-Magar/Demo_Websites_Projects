@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* VELA editorial palette — HSL */
+    --background: 33 33% 94%;          /* #F5F0EA warm off-white */
+    --foreground: 0 0% 10%;            /* #1A1A1A charcoal */
+
+    --card: 33 33% 94%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 33 33% 94%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 0 0% 10%;               /* charcoal */
+    --primary-foreground: 33 33% 94%;
+
+    --secondary: 30 12% 56%;           /* warm stone */
+    --secondary-foreground: 33 33% 94%;
+
+    --muted: 30 20% 88%;
+    --muted-foreground: 30 12% 40%;
+
+    --accent: 17 86% 41%;              /* #C1440E terracotta */
+    --accent-foreground: 33 33% 94%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 33 33% 94%;
+
+    --border: 30 15% 82%;
+    --input: 30 15% 82%;
+    --ring: 17 86% 41%;
+
+    --radius: 0;
+
+    /* Brand specifics */
+    --vela-cream: 33 33% 94%;
+    --vela-charcoal: 0 0% 10%;
+    --vela-terracotta: 17 86% 41%;
+    --vela-stone: 30 12% 56%;
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 33 33% 94%;
+    --card: 0 0% 10%;
+    --card-foreground: 33 33% 94%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 33 33% 94%;
+    --primary: 33 33% 94%;
+    --primary-foreground: 0 0% 10%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 33 33% 94%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 30 12% 70%;
+    --accent: 17 86% 41%;
+    --accent-foreground: 33 33% 94%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 17 86% 41%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  /* Hide scrollbars globally but keep scrolling functional */
+  html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;          /* Firefox */
+    -ms-overflow-style: none;       /* IE/Edge */
+  }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar,
+  *::-webkit-scrollbar {
+    display: none;                  /* Chrome/Safari/WebKit */
+    width: 0;
+    height: 0;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+
+  ::selection {
+    background: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+  }
+}
+
+@layer utilities {
+  .font-display { font-family: 'Cormorant Garamond', serif; }
+  .font-body { font-family: 'Outfit', system-ui, sans-serif; }
+
+  .tracking-vela { letter-spacing: 0.3em; }
+  .tracking-wider-2 { letter-spacing: 0.2em; }
+
+  /* Story link underline */
+  .story-link {
+    @apply relative inline-block;
+  }
+  .story-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background: hsl(var(--accent));
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+  }
+  .story-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  /* Ken Burns */
+  @keyframes ken-burns {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.08); }
+  }
+  .animate-ken-burns {
+    animation: ken-burns 12s ease-in-out infinite alternate;
+  }
+
+  /* Marquee */
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+
+  /* Orbit floating images */
+  @keyframes orbit-1 {
+    from { transform: rotate(0deg) translateX(220px) rotate(0deg); }
+    to { transform: rotate(360deg) translateX(220px) rotate(-360deg); }
+  }
+  @keyframes orbit-2 {
+    from { transform: rotate(120deg) translateX(280px) rotate(-120deg); }
+    to { transform: rotate(480deg) translateX(280px) rotate(-480deg); }
+  }
+  @keyframes orbit-3 {
+    from { transform: rotate(240deg) translateX(250px) rotate(-240deg); }
+    to { transform: rotate(600deg) translateX(250px) rotate(-600deg); }
+  }
+  @media (max-width: 768px) {
+    @keyframes orbit-1 {
+      from { transform: rotate(0deg) translateX(130px) rotate(0deg); }
+      to { transform: rotate(360deg) translateX(130px) rotate(-360deg); }
+    }
+    @keyframes orbit-2 {
+      from { transform: rotate(120deg) translateX(160px) rotate(-120deg); }
+      to { transform: rotate(480deg) translateX(160px) rotate(-480deg); }
+    }
+    @keyframes orbit-3 {
+      from { transform: rotate(240deg) translateX(145px) rotate(-240deg); }
+      to { transform: rotate(600deg) translateX(145px) rotate(-600deg); }
+    }
+  }
+  .animate-orbit-1 { animation: orbit-1 22s linear infinite; }
+  .animate-orbit-2 { animation: orbit-2 28s linear infinite; }
+  .animate-orbit-3 { animation: orbit-3 26s linear infinite; }
+
+  /* SVG line draw */
+  @keyframes draw-line {
+    to { stroke-dashoffset: 0; }
+  }
+
+  /* Hide scrollbar but keep scrolling */
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}

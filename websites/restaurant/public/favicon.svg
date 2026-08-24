@@ -1,0 +1,15 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <text
+    x="232"
+    y="330"
+    fill="#D4AF37"
+    stroke="#5A0F1A"
+    stroke-width="30"
+    paint-order="stroke fill"
+    font-family="Georgia, Times New Roman, serif"
+    font-size="300"
+    font-weight="700"
+    text-anchor="middle"
+  >R</text>
+  <circle cx="345" cy="156" r="26" fill="#FFF4DA" stroke="#D4AF37" stroke-width="10"/>
+</svg>

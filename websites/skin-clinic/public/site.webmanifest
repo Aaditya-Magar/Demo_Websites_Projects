@@ -1,0 +1,16 @@
+{
+  "name": "DermaGlow Skin Clinic",
+  "short_name": "DermaGlow",
+  "description": "Premium dermatology clinic portfolio website.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "theme_color": "#f472b6",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

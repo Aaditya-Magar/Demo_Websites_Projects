@@ -1,0 +1,16 @@
+<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="320" height="320" rx="48" fill="#071014"/>
+  <defs>
+    <linearGradient id="logoGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#F7D97B"/>
+    </linearGradient>
+  </defs>
+  <circle cx="160" cy="160" r="88" fill="url(#logoGradient)" opacity="0.16"/>
+  <path d="M114 156C114 132 134 112 158 112H186C210 112 230 132 230 156V164C230 188 210 208 186 208H158C134 208 114 188 114 164V156Z" fill="#FFFFFF" fill-opacity="0.1"/>
+  <path d="M126 160C126 140 142 124 162 124H182C202 124 218 140 218 160V164C218 184 202 200 182 200H162C142 200 126 184 126 164V160Z" stroke="url(#logoGradient)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M146 124L170 196" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round"/>
+  <path d="M190 124L150 124" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round"/>
+  <path d="M190 200L154 200" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round"/>
+  <text x="160" y="284" fill="#F7D97B" font-family="Inter, sans-serif" font-size="28" font-weight="700" text-anchor="middle">SEAGROVE</text>
+</svg>

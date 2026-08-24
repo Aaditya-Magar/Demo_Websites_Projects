@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "buildCommand": "bun run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/assets/(.*)",
+      "destination": "/client/assets/$1"
+    },
+    {
+      "source": "/((?!api/|client/).*)",
+      "destination": "/api/server"
+    }
+  ]
+}

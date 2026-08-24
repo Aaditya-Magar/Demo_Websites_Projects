@@ -1,0 +1,20 @@
+{
+  "name": "SmileCraft Dental",
+  "short_name": "SmileCraft",
+  "description": "Portfolio showcase for a premium dental clinic landing page built with TanStack Start and Tailwind CSS.",
+  "theme_color": "#0B1437",
+  "background_color": "#08152E",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

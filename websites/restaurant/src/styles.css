@@ -1,0 +1,208 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-gold: var(--gold);
+  --color-gold-glow: var(--gold-glow);
+  --color-maroon: var(--maroon);
+  --color-cream: var(--cream);
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Poppins", "Inter", sans-serif;
+}
+
+:root {
+  --radius: 0.5rem;
+  /* Royal Spice House palette */
+  --maroon: oklch(0.32 0.12 20);          /* #5A0F1A deep maroon */
+  --gold: oklch(0.78 0.13 85);            /* #D4AF37 royal gold */
+  --gold-glow: oklch(0.85 0.15 88);
+  --cream: oklch(0.97 0.025 85);          /* #FFF8E7 cream */
+  --dark-brown: oklch(0.18 0.01 50);      /* #1C1C1C */
+
+  --background: var(--cream);
+  --foreground: var(--dark-brown);
+  --card: oklch(1 0 0);
+  --card-foreground: var(--dark-brown);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--dark-brown);
+  --primary: var(--maroon);
+  --primary-foreground: var(--cream);
+  --secondary: var(--gold);
+  --secondary-foreground: var(--dark-brown);
+  --muted: oklch(0.93 0.02 80);
+  --muted-foreground: oklch(0.45 0.03 50);
+  --accent: var(--gold);
+  --accent-foreground: var(--dark-brown);
+  --destructive: oklch(0.55 0.22 25);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.88 0.03 80);
+  --input: oklch(0.92 0.02 80);
+  --ring: var(--gold);
+}
+
+.dark {
+  --background: var(--dark-brown);
+  --foreground: var(--cream);
+  --card: oklch(0.22 0.02 40);
+  --card-foreground: var(--cream);
+  --popover: oklch(0.22 0.02 40);
+  --popover-foreground: var(--cream);
+  --primary: var(--gold);
+  --primary-foreground: var(--dark-brown);
+  --secondary: var(--maroon);
+  --secondary-foreground: var(--cream);
+  --muted: oklch(0.25 0.02 40);
+  --muted-foreground: oklch(0.7 0.03 80);
+  --accent: var(--gold);
+  --accent-foreground: var(--dark-brown);
+  --border: oklch(0.3 0.03 50);
+  --input: oklch(0.28 0.03 50);
+  --ring: var(--gold);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); letter-spacing: -0.01em; }
+  img { max-width: 100%; height: auto; }
+}
+
+/* Hide native scrollbars across the whole site while keeping scroll functional */
+html, body { scrollbar-width: none; -ms-overflow-style: none; }
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar { width: 0; height: 0; display: none; }
+* { scrollbar-width: none; -ms-overflow-style: none; }
+
+@layer utilities {
+  .text-gold { color: var(--gold); }
+  .bg-gold { background-color: var(--gold); }
+  .bg-maroon { background-color: var(--maroon); }
+  .text-maroon { color: var(--maroon); }
+  .bg-cream { background-color: var(--cream); }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, var(--gold), var(--gold-glow), var(--gold));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bg-royal-gradient {
+    background: linear-gradient(135deg, var(--maroon) 0%, oklch(0.22 0.08 20) 100%);
+  }
+
+  .glow-gold {
+    box-shadow: 0 0 30px -5px color-mix(in oklab, var(--gold) 60%, transparent);
+  }
+  .glow-gold-strong {
+    box-shadow: 0 0 50px -5px color-mix(in oklab, var(--gold) 80%, transparent),
+                0 0 80px -10px color-mix(in oklab, var(--gold) 40%, transparent);
+  }
+
+  .gold-underline {
+    position: relative;
+  }
+  .gold-underline::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: -4px;
+    height: 2px; width: 100%;
+    background: var(--gold);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+  .gold-underline:hover::after,
+  .gold-underline[data-status="active"]::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  .ornate-divider {
+    display: flex; align-items: center; justify-content: center; gap: 1rem;
+    color: var(--gold);
+  }
+  .ornate-divider::before,
+  .ornate-divider::after {
+    content: "";
+    flex: 1; max-width: 80px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+}
+
+@keyframes float-spice {
+  0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.4; }
+  50% { transform: translateY(-30px) rotate(180deg); opacity: 0.8; }
+}
+.animate-float-spice { animation: float-spice 8s ease-in-out infinite; }
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, color-mix(in oklab, var(--gold) 30%, transparent), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+
+/* Custom cursor */
+.cursor-dot {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 20px var(--gold), 0 0 40px var(--gold-glow);
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease, width 0.2s, height 0.2s;
+  mix-blend-mode: screen;
+}
+.cursor-ring {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid color-mix(in oklab, var(--gold) 70%, transparent);
+  transform: translate(-50%, -50%);
+  transition: transform 0.18s ease, width 0.25s, height 0.25s, opacity 0.2s;
+}
+@media (max-width: 768px) {
+  .cursor-dot, .cursor-ring { display: none; }
+}

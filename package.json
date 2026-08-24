@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-websites",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A monorepo of 13 production-ready portfolio website templates.",
+  "workspaces": [
+    "websites/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "format": "npm run format --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "overrides": {
+    "esbuild": "0.28.1"
+  },
+  "license": "MIT"
+}

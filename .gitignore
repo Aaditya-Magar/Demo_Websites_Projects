@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Builds and generated files
+dist/
+dist-ssr/
+build/
+out/
+.output/
+.vinxi/
+.tanstack/
+.nitro/
+.wrangler/
+coverage/
+routeTree.gen.ts
+
+# Deployment tools
+.vercel/
+.netlify/
+.dev.vars
+
+# Environment files
+.env
+.env.*
+!.env.example
+*.local
+
+# Logs and caches
+logs/
+*.log
+*.pid
+*.tmp
+.cache/
+.eslintcache
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.sw?
