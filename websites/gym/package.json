@@ -17,6 +17,7 @@
     "@tailwindcss/vite": "^4.2.1",
     "@tanstack/react-router": "^1.168.0",
     "@tanstack/react-start": "^1.167.14",
+    "@tanstack/router-plugin": "^1.168.0",
     "framer-motion": "^12.38.0",
     "lucide-react": "0.460.0",
     "react": "^19.2.0",
